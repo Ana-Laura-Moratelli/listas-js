@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 3</title>
+</head>
+<body>
+    <script>
+        let nota1;
+        let nota2;
+        let nota3;
+        let mediaponderada;
+
+        nota1 = prompt("Digite a nota de atividade prática em laboratório: ")
+        nota2 = prompt("Digite a nota de prova do semestre: ")
+        nota3 = prompt("Digite a nota de trabalho teórico: ")
+
+        mediaponderada = ((2* nota1) + (5 * nota2) + (3* nota3)) / (10)
+ 
+        if (mediaponderada > 9 && mediaponderada <= 10){
+            document.write("Sua média é: " +mediaponderada+ ", e sua classificação é A")
+        }
+
+        else if (mediaponderada > 8 && mediaponderada <= 9){
+            document.write("Sua média é: " +mediaponderada+ ", e sua classificação é B")
+        }
+
+        else if (mediaponderada > 7 && mediaponderada <= 8){
+            document.write("Sua média é: " +mediaponderada+ ", e sua classificação é C")
+        }
+
+        else if (mediaponderada > 6 && mediaponderada <= 7){
+            document.write("Sua média é: " +mediaponderada+ ", e sua classificação é D")
+        }
+
+        else if (mediaponderada > 5 && mediaponderada <= 6){
+            document.write("Sua média é: " +mediaponderada+ ", e sua classificação é E")
+        }
+
+        else if (mediaponderada > 0 && mediaponderada <= 5){
+            document.write("Sua média é: " +mediaponderada+ ", e sua classificação é F")
+        }
+    </script>
+</body>
+</html>

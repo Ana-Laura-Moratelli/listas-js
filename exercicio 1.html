@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 1</title>
+</head>
+<body>
+    <script>
+        let nome;
+        let altura;
+        let peso;
+        let massacorporal;
+
+        let valorFloatA = parseFloat(altura);
+        let valorFloatP = parseFloat(peso);
+        let valorFloatM = parseFloat(massacorporal);
+        
+
+        nome = prompt("Qual seu nome?: ");
+        altura = prompt("Qual sua altura?: ");
+        peso = prompt("Qual seu peso?: ");
+
+        alturametros = altura / 100
+        massacorporal = peso / alturametros ** 2    
+
+        if (massacorporal < 16){
+            document.write(nome + ", o seu cálculo da massa corporal é: " + massacorporal.toFixed(2) + ", e seu índice é : Baixo peso muito grave")
+        } 
+        
+        else if(massacorporal <= 16.99 && massacorporal > 16){
+            document.write(nome + ", o seu cálculo da massa corporal é: " + massacorporal.toFixed(2) + ", e seu índice é : Baixo peso grave")
+        }
+        
+        else if (massacorporal <= 18.49 && massacorporal > 17){
+            document.write(nome + ", o seu cálculo da massa corporal é: " + massacorporal.toFixed(2) + ", e seu índice é : Baixo peso")
+        }
+       
+        else if(massacorporal <=24.99 && massacorporal > 18.50){
+            document.write(nome + ", o seu cálculo da massa corporal é: " + massacorporal.toFixed(2) + ", : Peso normal")
+        }
+
+        else if(massacorporal <=29.99 && massacorporal > 25){
+            document.write(nome + ", o seu cálculo da massa corporal é: " + massacorporal.toFixed(2) + ", e seu índice é : Sobrepeso")
+        }
+
+        else if(massacorporal <=34.99 && massacorporal > 30){
+            document.write(nome + ", o seu cálculo da massa corporal é: " + massacorporal.toFixed(2) + ", e seu índice é : Obesidade grau I")
+        }
+
+        else if(massacorporal <=39.99 && massacorporal > 35){
+            document.write(nome + ", o seu cálculo da massa corporal é: " + massacorporal.toFixed(2) + ", e seu índice é : Obesidade grau II")
+        }
+
+        else if(massacorporal <=40){
+            document.write(nome + ", o seu cálculo da massa corporal é: " + massacorporal.toFixed(2) + ", e seu índice é : Obesidade grau III")
+        }
+
+        
+    </script>
+</body>
+</html>
+    
+
